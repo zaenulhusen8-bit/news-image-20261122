@@ -34,7 +34,7 @@ survived:
 clean directory produced byte-identical output, and a third render in
 this repository matches it:
 
-- sha256(entry.png) = 76d64df4a7581f6f0c26ee891c57252b0bdfd16b4a22fc5d77a3cd9e782f9cc3
+- sha256(entry.png) = 51552847336419f429b355094cdab1b07d7734e18d75e7a5061576c1772ef77c
 - size = 319,651 bytes (1024x1024 PNG)
 
 `STORIES.md` is the story-by-story verification log: every headline was

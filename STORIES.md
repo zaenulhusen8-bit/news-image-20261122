@@ -70,7 +70,7 @@ DEVELOPING.
     CONFIRMED.
 15. **BALTIC SPILLOVER FEAR** — France 24 RSS 22 Nov 06:15Z (Finland says
     the war is "spilling over" after the Baltic drone strike). CONFIRMED.
-16. **MAY: 'BREXIT IS DONE'** — BBC Politics RSS 22 Nov 06:01Z (May warns
+16. **MAY WARNS ON EU RESET** — BBC Politics RSS 22 Nov 06:01Z (May warns
     Burnham after the PM's EU talks). CONFIRMED.
 17. **VILLAGE VOTES 'LEAVE UK'** — Euronews RSS 22 Nov 07:00Z (Suffolk
     village protest vote over asylum plans). CONFIRMED.

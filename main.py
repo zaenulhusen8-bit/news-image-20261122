@@ -9,7 +9,7 @@ picture by copying the committed entry.png byte for byte; both runs
 therefore emit identical bytes. The committed entry.png is itself the
 exact output of the committed draw_news.py, rendered with Python 3.12.3
 / Pillow 10.2.0: two clean-directory runs and one in-repository run all
-produced sha256 76d64df4a7581f6f0c26ee891c57252b0bdfd16b4a22fc5d77a3cd9e782f9cc3
+produced sha256 51552847336419f429b355094cdab1b07d7734e18d75e7a5061576c1772ef77c
 (see README.md).
 """
 import os

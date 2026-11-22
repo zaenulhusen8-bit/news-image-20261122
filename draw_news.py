@@ -84,7 +84,7 @@ SECTIONS = [
         ("BRUSSELS FLIGHTS OFF", "Xinhua", "05:49", "CONFIRMED", "plane"),
         ("CLASHES ERUPT IN FRANCE", "Al Jazeera", "00:37", "CONFIRMED", "people"),
         ("BALTIC SPILLOVER FEAR", "France 24", "06:15", "CONFIRMED", "shield"),
-        ("MAY: 'BREXIT IS DONE'", "BBC", "06:01", "CONFIRMED", "flag"),
+        ("MAY WARNS ON EU RESET", "BBC", "06:01", "CONFIRMED", "flag"),
         ("VILLAGE VOTES 'LEAVE UK'", "Euronews", "07:00", "CONFIRMED", "ballot"),
         ("MADEIRA OCEAN SURVEY", "Euronews", "07:02", "CONFIRMED", "globe"),
     ]),
