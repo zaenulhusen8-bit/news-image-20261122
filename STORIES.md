@@ -1,99 +1,146 @@
-# Story verification log — news-image-20261122
+# Story verification log — news-image-20261122 (REBUILD, round 2)
 
-Edition day: **Sunday 22 November 2026**. No pre-gathered story file existed
-for today; every story below was gathered at build time (01:30–01:35 UTC,
-22 Nov 2026) from a source page verifiably published on 2026-11-22, and its
-headline was re-checked against that source. No story is dated 21 Nov or
-earlier. 52 stories · 10 sections · 9 regions · 5+ fields · wire majors:
-ANI, Reuters, BBC.
+Edition day: **Sunday 22 November 2026**. This is the rebuilt edition after
+the shadow judge's PERBAIKI verdict (Seek fallback, 04:34 UTC) and the GLM
+judge's mandatory fixes (01:54 UTC). Changes vs the first build:
 
-## LEAD — GULF CRISIS (5)
-1. IRGC claims missile-and-drone operation hit two US Patriot radars — ANI
-   (Desi Talk top-stories page, items datelined November 22, crawled 01:26 UTC 22 Nov)
-2. Iran strikes US air base in Kuwait, targets Bahrain — Daily Jagran
+- Story count cut 52 -> **36**, all drawn as real cells; the printed masthead
+  counts (36 STORIES · 10 SECTIONS · 9 REGIONS) match the drawing exactly.
+- Sourcing rebalanced: **30 of 36 stories (83%) are from recognised wire
+  majors** (Reuters, BBC, AP, ANI, AFP). Weak-outlet items were replaced by
+  wire versions of the same stories where they exist, re-verified
+  05:02–05:14 UTC on 22 Nov 2026 via the Reuters World News Summary
+  (updated 22-11-2026), apnews.com items published 2026-11-22T02:46–04:11Z,
+  and the Manila Times world page dated November 22, 2026 carrying
+  AP/AFP/Reuters bylines.
+- Dropped per the judges' fixes and freshness discipline: Zverev–Medvedev
+  ATP semifinal and England–All Blacks (events of 21 Nov, only reported in
+  22-Nov roundups — same risk class as the 20261120 stale defect),
+  Washington's-hair lock (judge named it least credible), Trump–Nvidia
+  (japako only), Hong Kong voting (Global Digest only), Estonia border
+  (Jagran only), Myanmar quake (minor), Croatia rally, UN weapons talks,
+  Peru quake via grand-star (kept instead: AFP Florida/Manipur items),
+  Sudan kept as the single grand-star item.
+- Every story below was verified against a source page published on
+  2026-11-22 (build-time log 01:30–01:35 UTC for items kept from round 1;
+  05:02–05:14 UTC for items added or re-attributed in this rebuild).
+  No story is dated 21 Nov or earlier as a *report*; US college games ended
+  after midnight UTC and are carried in 22-Nov-dated wire roundups.
+
+## LEAD — GULF CRISIS (5) · Middle East · war/diplomacy
+1. **IRAN STRIKES U.S. BASES ACROSS THE GULF** — ANI — DEVELOPING
+   (IRGC claims missile-and-drone operation hit two US Patriot radars —
+   ANI via Desi Talk top stories, datelined November 22; corroborated by
+   items 2–3 below. This headline is the page's lead headline, verbatim.)
+2. IRAN HITS U.S. AIR BASE IN KUWAIT — Daily Jagran — DEVELOPING
    (school-assembly headlines for November 22, 2026)
-3. Iran targets US military assets in Bahrain — Global Digest
+3. IRAN TARGETS U.S. ASSETS IN BAHRAIN — Global Digest — DEVELOPING
    (generated 22.11.2026 01:47 Valletta time)
-4. Trump seeks permanent nuclear accord with Iran — OpenSourceTrades
-   (article dated November 22, 2026)
-5. Araghchi: reopening Hormuz "not difficult" if US accepts terms — ANI
+4. ARAGHCHI: HORMUZ REOPENING "NOT DIFFICULT" — ANI — DEVELOPING
+   (Desi Talk, November 22; if US accepts terms)
+5. IRAN CALLS U.S. BLOCKADE A "HOSTILE ACT" — ANI — DEVELOPING
    (Desi Talk, November 22)
 
-## UKRAINE (7)
-6. Russian strike on Lviv kills 2, injures 10 — Global Digest (22.11.2026 01:47)
-7. Missile hits Kryvyi Rih, Zelenskyy's hometown: 2 dead, 60 hurt — japako
-   (published 2026-11-22T00:30:04Z)
-8. Zelenskyy: Crimea bridge strikes "a fair response" — BBC
-   (BBC World page, published 2026-11-22T00:35:06Z)
-9. Zelenskyy: NATO membership is clearest guarantee — ANI (Desi Talk, November 22)
-10. Ukraine marks Day of Dignity and Freedom — japako (2026-11-22T00:30:04Z)
-11. Kyiv hits Russia's only Iskander-M fuel supplier — japako (2026-11-22T00:07:58Z)
-12. Russian attack on Zaporizhzhya hits a kindergarten — japako (2026-11-22T00:07:58Z)
+## UKRAINE (4) · Eastern Europe · war/diplomacy
+6. ZELENSKYY: BRIDGE STRIKES FAIR — BBC — CONFIRMED
+   (BBC World page, published 2026-11-22T00:35:06Z; Crimea bridge strikes
+   "a fair response")
+7. ZELENSKYY: NATO GUARANTEE — ANI — CONFIRMED (Desi Talk, Nov 22;
+   NATO membership the "clearest guarantee")
+8. RUSSIAN STRIKE ON LVIV KILLS 2 — Global Digest — DEVELOPING
+   (22.11.2026 01:47; 10 injured)
+9. KYIV HITS ISKANDER FUEL PLANT — japako — CONFIRMED
+   (published 2026-11-22T00:07:58Z; Russia's only Iskander-M fuel supplier)
 
-## EUROPE (8)
-13. Finland: war spilling over after ship drone strike — ANI (Desi Talk, November 22)
-14. Russia-bound ship attacked in Gulf of Finland — BBC (2026-11-22T00:35:06Z)
-15. Denmark: Russia plotted to kill US-Ukrainian rapper — BBC (2026-11-22T00:35:06Z)
-16. Estonia to shut border with Russia — Daily Jagran (November 22, 2026)
-17. EU and Indonesia sign trade deal after 10 years — Global Digest (22.11.2026 01:47)
-18. COP31 talks in overtime, deadlocked on fossil fuels — BBC (2026-11-22T00:35:06Z)
-19. UN weapons talks fall short of enforceable rules — grand-star
-    (published 2026-11-22T00:29:56Z)
-20. Croatia rallies over psychiatric-hospital death — grand-star (2026-11-22T00:29:56Z)
+## EUROPE (4) · Europe · war/politics/climate
+10. RUSSIAN SHIP ABLAZE IN BALTIC — BBC — DEVELOPING
+    (BBC 2026-11-22T00:35:06Z; Russia-bound ship attacked in Gulf of
+    Finland; Reuters summary: cargo ship Sparta II ablaze after drone
+    strike, crew evacuated)
+11. RUSSIA PLOTTED RAPPER KILLING — BBC — CONFIRMED
+    (BBC 2026-11-22T00:35:06Z; Denmark: Russia plotted to kill
+    US-Ukrainian rapper)
+12. COP31 DEADLOCKED IN OVERTIME — BBC — DEVELOPING
+    (BBC 2026-11-22T00:35:06Z; talks in overtime, deadlocked on fossil fuels)
+13. YOUTH PROTESTS SWEEP EUROPE — AFP — CONFIRMED
+    (Manila Times world page, "By Agence France-Presse — November 22, 2026")
 
-## MIDDLE EAST (5)
-21. Saudi coalition downs Houthi missile — japako (2026-11-22T00:07:58Z)
-22. Turkish intel chief meets Hamas in Istanbul — japako (2026-11-22T00:07:58Z)
-23. Eisenkot opens coalition talks, invites Likud — ANI (Desi Talk, November 22)
-24. Ex-Israeli PM backs Eisenkot for premier — japako (2026-11-22T00:30:04Z)
-25. Iran calls US blockade a "hostile act" — ANI (Desi Talk, November 22)
+## MIDDLE EAST (3) · Middle East · war/diplomacy
+14. HOUTHIS STRIKE SAUDI CAPITAL — AFP — DEVELOPING
+    (Manila Times, AFP, November 22, 2026: "Houthis launch revenge
+    strikes on Saudi capital")
+15. HAMAS–TURKIYE INTEL TALKS — japako — CONFIRMED
+    (2026-11-22T00:30:04Z; Turkish intel chief meets Hamas in Istanbul)
+16. EISENKOT OPENS TALKS — ANI — CONFIRMED
+    (Desi Talk, November 22; coalition talks, invites Likud)
 
-## ASIA-PACIFIC (8)
-26. Myanmar quake 4.1 strikes in early hours — ANI (Desi Talk, November 22)
-27. Modi opens Nitish Setu bridge in Bihar — Daily Jagran (November 22, 2026)
-28. Cyclone Akvan grounds 14 Ranchi flights — Daily Jagran (November 22, 2026)
-29. Japan to train live-fire in India, a first — Daily Jagran (November 22, 2026)
-30. Hong Kong Election Committee voting opens — Global Digest (22.11.2026 01:47)
-31. Trump-Xi Shenzhen meeting sends world signals — japako (2026-11-22T00:30:04Z)
-32. Modi: civilisational links guarantee peace — japako (2026-11-22T00:30:04Z)
-33. Illicit alcohol kills 11, sickens 180 in Manipur — grand-star (2026-11-22T00:29:56Z)
+## ASIA-PACIFIC (4) · Asia-Pacific/South Asia · justice/politics/tech
+17. ROHINGYA HAIL VERDICT — AP — CONFIRMED
+    (Manila Times, "By Associated Press — November 22, 2026"; Rohingyas
+    hail genocide verdict vs Myanmar)
+18. SOUTH KOREA: SPEED WINS AI RACE — Reuters — CONFIRMED
+    (Manila Times, "By Reuters — November 22, 2026"; President Lee)
+19. META OFFICES PROTESTED IN INDIA — Reuters — CONFIRMED
+    (Manila Times, "By Reuters — November 22, 2026"; opposition protests)
+20. BAD BREW KILLS 11 IN MANIPUR — AFP — CONFIRMED
+    (Manila Times, AFP, November 22, 2026; tainted alcohol, 180 sickened)
 
-## AMERICAS (7)
-34. Strong quake shakes Peru's Andes; no casualties — grand-star (2026-11-22T00:29:56Z).
-    (Magnitude omitted: sources disagree 6.7 vs 6.9.)
-35. Mexico captures "El Chapo Isidro", FBI top-10 fugitive — grand-star (2026-11-22T00:29:56Z)
-36. FBI probes hack of its criminal database — BBC (2026-11-22T00:35:06Z)
-37. Man convicted of starting L.A. Palisades fire — BBC (2026-11-22T00:35:06Z)
-38. Three Salvadorans killed in Haiti blast — japako (2026-11-22T00:30:04Z)
-39. US agencies hit by cyberattacks, media report — japako (2026-11-22T00:30:04Z)
-40. Trump presses Nvidia to reinstate Jensen Huang — japako (2026-11-22T00:30:04Z)
+## AMERICAS (4) · North & Latin America · disaster/crime/diplomacy
+21. HISTORIC FLOODS HIT FLORIDA — AP — DEVELOPING
+    (Manila Times, "By Associated Press — November 22, 2026"; storms spawn
+    historic flooding)
+22. FBI PROBES HACK OF ITS DATABASE — BBC — DEVELOPING
+    (BBC 2026-11-22T00:35:06Z; criminal database)
+23. MEXICO NABS "EL CHAPO ISIDRO" — Reuters — CONFIRMED
+    (Reuters World News Summary, updated 22-11-2026; FBI top-10 fugitive
+    Fausto Isidro Meza Flores captured in Sinaloa)
+24. PENTAGON TO CURB CANADA TIES — AFP — CONFIRMED
+    (Manila Times, AFP, November 22, 2026; Pentagon moves to restrict
+    US-Canada defense ties)
 
-## AFRICA (3)
-41. Sudan's Tasis alliance seizes Bau in Blue Nile — grand-star (2026-11-22T00:29:56Z)
-42. ANC battles to hold South Africa's key cities — BBC (2026-11-22T00:35:06Z)
-43. Nigerian youth: power shown, vote unshaped — BBC (2026-11-22T00:35:06Z)
+## AFRICA (3) · Africa · politics/conflict
+25. ANC FIGHTS TO HOLD KEY CITIES — BBC — CONFIRMED (BBC 2026-11-22T00:35:06Z)
+26. NIGERIAN YOUTH, VOTE UNSHAPED — BBC — CONFIRMED (BBC 2026-11-22T00:35:06Z)
+27. SUDAN ALLIANCE SEIZES BAU — grand-star — CONFIRMED
+    (published 2026-11-22T00:29:56Z; Tasis alliance seizes Bau, Blue Nile)
 
-## MARKETS (3)
-44. Tech sell-off drags markets; Anthropic slides — BBC (2026-11-22T00:35:06Z)
-45. Judge approves $7.25bn Roundup settlement — BBC (2026-11-22T00:35:06Z)
-46. Crude oil futures fall more than 3% — Daily Jagran (November 22, 2026)
+## MARKETS & TECH (3) · Global · economy/tech
+28. TECH SELLOFF DRAGS MARKETS — BBC — CONFIRMED
+    (BBC 2026-11-22T00:35:06Z; Anthropic slides)
+29. NVIDIA FACES ACCOUNTING PROBE — AFP — DEVELOPING
+    (Manila Times, AFP, November 22, 2026; US accounting probe)
+30. $7.25BN ROUNDUP DEAL APPROVED — BBC — CONFIRMED
+    (BBC 2026-11-22T00:35:06Z; judge approves $7.25bn settlement)
 
-## SPORT (4)
-47. BYU outlasts Kansas 31-29 in triple overtime — Reuters
-    (reuters.com roundup URL dated 2026-11-22; game ended after midnight UTC)
-48. Nebraska stuns No. 14 Ohio State 31-27 — Reuters (same 2026-11-22 roundup)
-49. Zverev beats Medvedev, into ATP Finals decider — TNT Sports (22 Nov 2026)
-50. England hammer All Blacks 37-12 in five-try rout — TNT Sports (22 Nov 2026)
+## SPORT (4) · Global · sport
+31. BYU OUTLASTS KANSAS IN 3 OT — Reuters — CONFIRMED
+    (reuters.com roundup URL dated 2026-11-22; 31-29 triple overtime;
+    game ended after midnight UTC)
+32. NEBRASKA STUNS OHIO STATE 31-27 — Reuters — CONFIRMED
+    (same 2026-11-22 roundup; No. 14 Ohio State)
+33. 76ERS EDGE BUCKS 132-129 — AP — CONFIRMED
+    (apnews.com, published 2026-11-22T04:11:41Z; Embiid 26 pts/17 reb,
+    Herro career-high 50)
+34. GEORGIA ROUTS S. CAROLINA 34-6 — AP — CONFIRMED
+    (apnews.com, published 2026-11-22T04:01:57Z; No. 1 Georgia into the
+    SEC title game)
 
-## CULTURE (2)
-51. Lock of Washington's hair sells for $4,000 — BBC (2026-11-22T00:35:06Z)
-52. Teen gamer and mother help rescue missing girl — BBC (2026-11-22T00:35:06Z)
+## CULTURE (2) · Global · culture
+35. PRINCESS CATHERINE ON CANCER — AP — CONFIRMED
+    (Manila Times, "By Associated Press — November 22, 2026"; reflects on
+    life after cancer diagnosis in a new documentary)
+36. TEEN GAMER HELPS RESCUE GIRL — BBC — CONFIRMED
+    (BBC 2026-11-22T00:35:06Z; teen gamer and mother help rescue
+    missing girl)
 
-## Excluded on purpose (date discipline)
-- Saturday 21 Nov sports results reported 21 Nov (e.g. Leeds 4-1 Chelsea at
-  Stamford Bridge) were NOT used: the match happened 21 Nov, so it is not a
-  22 Nov story. Only US college games that ended after midnight UTC, and
-  fixtures/results reported in 22-Nov-dated sources, were used.
-- AP wire summaries syndicated 21 Nov (reflector.com) were not used as
-  verification sources; AP-corroborated stories above are verified through
-  their 22-Nov-dated sources instead.
+## Counts (printed on the page — must match the drawing)
+- Stories drawn: 36 (5 lead + 31 in section boxes)
+- Sections: 10 (GULF CRISIS, UKRAINE, EUROPE, MIDDLE EAST, ASIA-PACIFIC,
+  AMERICAS, AFRICA, MARKETS & TECH, SPORT, CULTURE)
+- Regions: 9 (Middle East, Eastern Europe, Europe, Asia-Pacific,
+  South Asia, North America, Latin America, Africa, Global)
+- Fields: war, diplomacy, politics, climate, disaster, crime/justice,
+  economy, tech, sport, culture (10)
+- Wire majors (Reuters/BBC/AP/ANI/AFP): 30 of 36 = 83%
+- Confidence marks: DEVELOPING on items 1, 2, 3, 4, 5, 8, 10, 12, 14,
+  21, 22, 29; CONFIRMED on all others. Marks are drawn on every cell.
