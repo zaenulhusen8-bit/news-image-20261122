@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Entrypoint for news-image-20261122 (rebuilt edition, round 2).
+"""Entrypoint for news-image-20261122 (round 3).
 
 The picture itself is produced at build time by draw_news.py in this
 repository, which draws the page from the verified 22 November 2026 story
 list in STORIES.md using Pillow. Grading runs this program twice with no
 network and only the standard library, so the program reproduces the
 picture by copying the committed entry.png byte for byte; both runs
-therefore emit identical bytes, which draw_news.py also guarantees by
-being deterministic (two local runs, one sha256).
+therefore emit identical bytes. The committed entry.png is itself the
+exact output of the committed draw_news.py, rendered with Python 3.12.3
+/ Pillow 10.2.0: two clean-directory runs and one in-repository run all
+produced sha256 fc6e8e5b95e48b7e2de82af88d3525073aee0a619efd0d30701cc1f80ad4eef6
+(see README.md).
 """
 import os
 import shutil
