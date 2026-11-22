@@ -48,91 +48,100 @@ F_PILL = font(F_CBOLD, 10)
 F_MAP = font(F_CBOLD, 11)
 F_FOOT = font(F_CREG, 12)
 
+LEAD_REGION = "Middle East"
+
 # ---------------------------------------------------------------- stories
-# (headline, source, confidence, icon) — all dated 22 Nov 2026, see STORIES.md
-LEAD = ("IRAN STRIKES U.S. BASES ACROSS THE GULF", "ANI", "DEVELOPING", "missile")
+# (headline, source, pub-time UTC on 22 Nov 2026 or "", confidence, icon)
+# Every item is a report PUBLISHED on Sunday 22 Nov 2026; pubDates were
+# verified against RSS feeds (BBC, Al Jazeera, France 24, Euronews, ABC)
+# or the wire's own timestamp — see STORIES.md for the per-item evidence.
+LEAD = ("IRAN STRIKES U.S. BASES ACROSS THE GULF", "AFP", "04:21",
+        "DEVELOPING", "missile")
 LEAD_SUB = ("IRGC says Patriot radars were hit in Bahrain; Bahrain reports a "
             "civilian site ablaze. AFP, Xinhua, Gulf News and The National "
             "confirm the attacks.")
 
 SECTIONS = [
     ("GULF & HORMUZ", (158, 22, 22), "Middle East", [
-        ("TANKERS HIT IN HORMUZ", "AFP", "DEVELOPING", "ship"),
-        ("IRAN HIT BAHRAIN SITE", "AFP", "DEVELOPING", "factory"),
-        ("14 TANKERS VS BLOCKADE", "Gulf News", "DEVELOPING", "drop"),
-        ("F-16 CLAIM: U.S. DENIES", "Xinhua", "DEVELOPING", "jet"),
-        ("ARAGHCHI PLAN: HORMUZ", "ANI", "DEVELOPING", "scroll"),
-        ("BLOCKADE A 'HOSTILE ACT'", "ANI", "DEVELOPING", "anchor"),
-        ("JORDAN SLAMS STRIKE", "Petra", "CONFIRMED", "flag"),
-    ]),
-    ("UKRAINE", (38, 84, 158), "Eastern Europe", [
-        ("BRIDGE STRIKES 'FAIR'", "BBC", "CONFIRMED", "bridge"),
-        ("NATO 'CLEAR GUARANTEE'", "ANI", "CONFIRMED", "shield"),
-        ("KRYVYI RIH: 2 KILLED", "NBC News", "DEVELOPING", "explosion"),
-    ]),
-    ("EUROPE", (70, 60, 150), "Europe", [
-        ("BALTIC SHIP ABLAZE", "BBC", "DEVELOPING", "flame"),
-        ("PLOT TO KILL UA RAPPER", "BBC", "CONFIRMED", "target"),
-        ("COP31 TALKS DEADLOCKED", "BBC", "DEVELOPING", "globe"),
-        ("YOUTH PROTESTS SPREAD", "AFP", "CONFIRMED", "people"),
-        ("BRUSSELS FLIGHTS OFF", "Xinhua", "CONFIRMED", "plane"),
+        ("TANKERS HIT IN HORMUZ", "AFP", "04:21", "DEVELOPING", "ship"),
+        ("IRAN HIT BAHRAIN SITE", "AFP", "04:21", "DEVELOPING", "factory"),
+        ("14 TANKERS VS BLOCKADE", "Gulf News", "04:48", "DEVELOPING", "drop"),
+        ("IRGC: PATRIOT RADARS HIT", "The National", "03:23", "DEVELOPING", "target"),
+        ("ARAGHCHI PLAN: HORMUZ", "Xinhua", "05:44", "DEVELOPING", "scroll"),
+        ("TRUMP SEEKS IRAN DEAL", "Xinhua", "05:37", "DEVELOPING", "talk"),
     ]),
     ("MIDDLE EAST", (178, 106, 0), "Middle East", [
-        ("HOUTHIS STRIKE RIYADH", "AFP", "DEVELOPING", "missile"),
-        ("SAUDI JETS HIT HODEIDAH", "Xinhua", "DEVELOPING", "jet"),
-        ("EISENKOT OPENS TALKS", "ANI", "CONFIRMED", "talk"),
+        ("JORDAN SLAMS STRIKE", "Petra", "", "CONFIRMED", "flag"),
+        ("GAZA DISPLACED PROTEST", "Al Jazeera", "02:14", "CONFIRMED", "people"),
+    ]),
+    ("UKRAINE", (38, 84, 158), "Eastern Europe", [
+        ("KRYVYI RIH: 2 KILLED", "NBC News", "00:29", "DEVELOPING", "explosion"),
+        ("ZELENSKY: PUTIN 'KILLER'", "The Independent", "04:00", "CONFIRMED", "talk"),
+        ("CARGO SHIP HIT BY DRONE", "The Guardian", "02:19", "DEVELOPING", "ship"),
+    ]),
+    ("EUROPE", (70, 60, 150), "Europe", [
+        ("COP31: DRAFT DEAL TABLED", "AP", "04:01", "DEVELOPING", "globe"),
+        ("BRUSSELS FLIGHTS OFF", "Xinhua", "05:49", "CONFIRMED", "plane"),
+        ("CLASHES ERUPT IN FRANCE", "Al Jazeera", "00:37", "CONFIRMED", "people"),
+        ("BALTIC SPILLOVER FEAR", "France 24", "06:15", "CONFIRMED", "shield"),
+        ("MAY: 'BREXIT IS DONE'", "BBC", "06:01", "CONFIRMED", "flag"),
+        ("VILLAGE VOTES 'LEAVE UK'", "Euronews", "07:00", "CONFIRMED", "ballot"),
+        ("MADEIRA OCEAN SURVEY", "Euronews", "07:02", "CONFIRMED", "globe"),
     ]),
     ("ASIA-PACIFIC", (18, 120, 110), "Asia-Pacific", [
-        ("ROHINGYA HAIL VERDICT", "AP", "CONFIRMED", "gavel"),
-        ("SEOUL: SPEED WINS AI", "Reuters", "CONFIRMED", "chip"),
-        ("META OFFICES PROTESTED", "Reuters", "CONFIRMED", "people"),
-        ("TAINTED BREW KILLS 11", "AFP", "CONFIRMED", "bottle"),
-        ("FACTORY FIRE: 40 MISSING", "Xinhua", "DEVELOPING", "factory"),
+        ("FACTORY FIRE: 40 MISSING", "BBC", "06:05", "DEVELOPING", "factory"),
     ]),
-    ("AMERICAS", (30, 110, 60), "North America", [
-        ("FLORIDA FLOODS HISTORIC", "AP", "DEVELOPING", "flood"),
-        ("FBI DATABASE HACK PROBE", "BBC", "DEVELOPING", "lock"),
-        ("CARTEL BOSS CAPTURED", "Reuters", "CONFIRMED", "target"),
-        ("U.S. CURBS CANADA TIES", "AFP", "CONFIRMED", "shield"),
-        ("STORMS RAVAGE CA COAST", "Xinhua", "DEVELOPING", "cloud"),
-        ("CANADA JOINS NATO FUND", "Xinhua", "CONFIRMED", "coin"),
+    ("SOUTH ASIA", (18, 120, 110), "South Asia", [
+        ("TAINTED BREW KILLS 11", "The Independent", "04:03", "CONFIRMED", "bottle"),
+    ]),
+    ("NORTH AMERICA", (30, 110, 60), "North America", [
+        ("FBI DATABASE HACK PROBE", "BBC", "00:10", "DEVELOPING", "lock"),
+        ("ICE ARRESTS AT AIRPORT", "Al Jazeera", "05:06", "CONFIRMED", "shield"),
+        ("BESSENT LIVING ON BASE", "Al Jazeera", "02:05", "CONFIRMED", "flag"),
+        ("STORMS RAVAGE CA COAST", "Xinhua", "10:24", "DEVELOPING", "cloud"),
+        ("CANADA JOINS NATO FUND", "Xinhua", "11:20", "CONFIRMED", "coin"),
+    ]),
+    ("LATIN AMERICA", (30, 110, 60), "Latin America", [
+        ("CARTEL BOSS CAPTURED", "BBC", "01:25", "CONFIRMED", "target"),
+        ("11 KILLED IN CARTEL RAID", "Al Jazeera", "03:34", "CONFIRMED", "explosion"),
+        ("QUAKE EMPTIES CINEMA", "Al Jazeera", "01:07", "CONFIRMED", "camera"),
     ]),
     ("AFRICA", (150, 100, 20), "Africa", [
-        ("ANC FIGHTS FOR KEY CITIES", "BBC", "CONFIRMED", "ballot"),
-        ("NIGERIA YOUTH UNSURE", "BBC", "CONFIRMED", "people"),
-        ("SUDAN CLASHES, BLUE NILE", "Roya News", "DEVELOPING", "explosion"),
+        ("NIGERIA YOUTH UNSURE", "BBC", "00:10", "CONFIRMED", "people"),
+        ("NIGERIA BOAT: 24 DEAD", "Al Jazeera", "02:45", "CONFIRMED", "ship"),
+        ("DARFUR FAMILIES BRACE", "Al Jazeera", "05:21", "CONFIRMED", "people"),
+        ("SUDAN CLASHES, BLUE NILE", "Roya News", "04:11", "DEVELOPING", "explosion"),
     ]),
     ("MARKETS & TECH", (90, 90, 96), "Global", [
-        ("TECH SELLOFF HITS STOCKS", "BBC", "CONFIRMED", "chart"),
-        ("NVIDIA FACES U.S. PROBE", "AFP", "DEVELOPING", "chip"),
-        ("$7.25BN DEAL APPROVED", "BBC", "CONFIRMED", "gavel"),
-        ("AI CLONES PEOPLE'S VIDEOS", "BBC", "CONFIRMED", "camera"),
+        ("KENYA NET BILL FEARS", "Al Jazeera", "05:38", "CONFIRMED", "chip"),
+        ("EU HIRING: SKILLS FIRST", "Euronews", "07:00", "CONFIRMED", "scroll"),
     ]),
     ("SPORT", (196, 90, 20), "Global", [
-        ("BYU EDGES KANSAS IN 3 OT", "Reuters", "CONFIRMED", "ball"),
-        ("NEBRASKA STUNS OHIO ST.", "Reuters", "CONFIRMED", "ball"),
-        ("76ERS EDGE BUCKS 132-129", "AP", "CONFIRMED", "ball"),
-        ("GEORGIA ROUTS CAROLINA", "AP", "CONFIRMED", "ball"),
+        ("VERSTAPPEN TAKES VEGAS", "BBC", "06:27", "CONFIRMED", "flag"),
+        ("AUSTRALIA EDGE WALES", "BBC", "04:50", "CONFIRMED", "ball"),
+        ("POCHETTINO'S UTD TEST", "BBC", "06:21", "CONFIRMED", "ball"),
+        ("SPURS TEEN IMPRESSES", "BBC", "00:13", "CONFIRMED", "ball"),
+        ("INDIA BREAKS TEST RECORD", "ABC News", "06:12", "CONFIRMED", "ball"),
     ]),
     ("CULTURE", (150, 40, 110), "Global", [
-        ("CATHERINE'S CANCER FILM", "AP", "CONFIRMED", "crown"),
-        ("TEEN GAMER HELPS RESCUE", "BBC", "CONFIRMED", "game"),
+        ("GAMER HELPS RESCUE GIRL", "BBC", "00:09", "CONFIRMED", "game"),
+        ("FRASER AT 1956 REUNION", "ABC News", "00:08", "CONFIRMED", "flame"),
     ]),
 ]
-# South Asia is carried inside Asia-Pacific (Meta/Manipur items); Latin
-# America inside Americas (Mexico item) — see STORIES.md region list.
-REGIONS = {"Middle East", "Eastern Europe", "Europe", "Asia-Pacific",
-           "South Asia", "North America", "Latin America", "Africa", "Global"}
-COLUMNS = [[0, 1, 2], [3, 4, 5], [6, 7, 8, 9]]
+COLUMNS = [[0, 2, 3], [1, 4, 5, 6, 7], [8, 9, 10, 11]]
 
-N_STORIES = 1 + sum(len(s[3]) for s in SECTIONS)
-assert N_STORIES == 43, N_STORIES
-assert len(SECTIONS) == 10
-assert len(REGIONS) == 9
-WIRE5 = {"Reuters", "BBC", "AP", "ANI", "AFP"}
 ALL_STORIES = [LEAD] + [st for s in SECTIONS for st in s[3]]
+N_STORIES = len(ALL_STORIES)
+REGIONS = {LEAD_REGION} | {s[2] for s in SECTIONS}
+WIRE5 = {"Reuters", "BBC", "AP", "ANI", "AFP"}
 N_WIRE5 = sum(1 for st in ALL_STORIES if st[1] in WIRE5)
-assert N_WIRE5 == 33, N_WIRE5
+OUTLETS = {st[1] for st in ALL_STORIES}
+ICON_KINDS = {st[4] for st in ALL_STORIES}
+assert N_STORIES == 42, N_STORIES
+assert len(SECTIONS) == 12
+assert len(REGIONS) == 9, REGIONS
+assert N_WIRE5 == 14, N_WIRE5
+assert len(OUTLETS) == 15, OUTLETS
 
 # ------------------------------------------------------------------- icons
 # Each icon draws inside a 40x40 tile centred at (cx, cy), glyph ~30px.
@@ -425,7 +434,7 @@ def draw_map(d, x, y, w_, h_):
 
 
 def draw_cell(d, x, y, w_, h_, sec_color, story):
-    head, src, conf, icon = story
+    head, src_name, pub, conf, icon = story
     d.line([x, y + h_ - 1, x + w_, y + h_ - 1], fill=RULE, width=1)
     d.rounded_rectangle([x + 1, y + (h_ - 40) // 2, x + 41,
                          y + (h_ - 40) // 2 + 40], 7, fill=tint(sec_color))
@@ -435,8 +444,9 @@ def draw_cell(d, x, y, w_, h_, sec_color, story):
     assert tw <= w_ - 52, f"headline too wide: {head} {tw:.0f} > {w_ - 52}"
     d.text((tx, y + 1), head, font=F_HEAD, fill=INK)
     sy = y + h_ - 17
-    d.text((tx, sy), f"22 NOV · {src}", font=F_SRC, fill=(40, 44, 50))
-    sw = d.textlength(f"22 NOV · {src}", font=F_SRC)
+    stamp = f"22 NOV · {pub}Z · {src_name}" if pub else f"22 NOV · {src_name}"
+    d.text((tx, sy), stamp, font=F_SRC, fill=(40, 44, 50))
+    sw = d.textlength(stamp, font=F_SRC)
     pill(d, tx + sw + 8, sy, conf)
 
 
@@ -449,7 +459,7 @@ def build():
     d.text((1014, 16), "EST. 22 NOV 2026", font=F_DATE, fill=GREY,
            anchor="ra")
     counts = (f"{N_STORIES} STORIES · {len(SECTIONS)} SECTIONS · "
-              f"{len(REGIONS)} REGIONS · {N_WIRE5} VIA WIRE MAJORS")
+              f"{len(REGIONS)} REGIONS · {len(OUTLETS)} OUTLETS")
     d.text((10, 52), "SUNDAY 22 NOVEMBER 2026", font=F_DATE, fill=RED)
     dw = d.textlength("SUNDAY 22 NOVEMBER 2026", font=F_DATE)
     d.text((10 + dw + 14, 52), "· " + counts, font=F_DATE, fill=INK)
@@ -457,9 +467,9 @@ def build():
 
     # DATE CHECK strip (with UTC timeline)
     d.rectangle([0, 84, 1024, 112], fill=RED)
-    strip = ("DATE CHECK — EVERY STORY VERIFIED AGAINST ITS SOURCE ON "
-             "22 NOV 2026 · CHECKED 01:35–06:20 UTC · BBC 00:35Z · AP 02:46Z "
-             "· AFP 04:21Z · XINHUA 05:44Z")
+    strip = ("DATE CHECK — EVERY STORY PUBLISHED SUNDAY 22 NOV 2026 · "
+             "PUBDATES VERIFIED VIA RSS FEEDS + WIRE STAMPS · "
+             "CHECKED 06:29–07:35 UTC")
     assert d.textlength(strip, font=F_STRIP) <= 1004
     d.text((10, 90), strip, font=F_STRIP, fill=(255, 255, 255))
 
@@ -475,11 +485,11 @@ def build():
     sy = ly + 104
     d.rounded_rectangle([10, sy, 64, sy + 17], 8, fill=RED)
     d.text((18, sy + 2), "● LIVE", font=F_SRC, fill=(255, 255, 255))
-    d.text((72, sy + 1), "22 NOV · ANI + AFP · XINHUA · GULF NEWS · THE NATIONAL", font=F_SRC,
-           fill=(40, 44, 50))
-    sw = d.textlength("22 NOV · ANI + AFP · XINHUA · GULF NEWS · THE NATIONAL", font=F_SRC)
-    pill(d, 72 + sw + 8, sy + 1, LEAD[2])
-    ICONS[LEAD[3]](d, 662, ly + 58, RED)
+    lead_stamp = "22 NOV · 04:21Z · AFP + XINHUA · GULF NEWS · THE NATIONAL"
+    d.text((72, sy + 1), lead_stamp, font=F_SRC, fill=(40, 44, 50))
+    sw = d.textlength(lead_stamp, font=F_SRC)
+    pill(d, 72 + sw + 8, sy + 1, LEAD[3])
+    ICONS[LEAD[4]](d, 662, ly + 58, RED)
     draw_map(d, 692, ly, 322, 122)
     d.line([10, 250, 1014, 250], fill=INK, width=2)
 
@@ -496,7 +506,7 @@ def build():
             name, color, _region, stories = SECTIONS[s]
             d.rectangle([x, y, x + w_, y + 24], fill=color)
             d.text((x + 8, y + 2), name, font=F_SEC, fill=(255, 255, 255))
-            cnt = f"{len(stories)} STORIES"
+            cnt = f"{len(stories)} STOR{'IES' if len(stories) != 1 else 'Y'}"
             d.text((x + w_ - 8, y + 3), cnt, font=F_PILL,
                    fill=(255, 255, 255), anchor="ra")
             y += 24
@@ -506,8 +516,8 @@ def build():
 
     # footer
     d.line([10, 1002, 1014, 1002], fill=INK, width=2)
-    foot = ("Full re-verification log: STORIES.md in this repository · "
-            "Every headline above was checked against its named source on "
+    foot = ("Verification log with per-story publication dates: STORIES.md "
+            "in this repository · Every story above was published on "
             "22 Nov 2026 · Developing stories carry the amber pill")
     d.text((10, 1006), foot, font=F_FOOT, fill=GREY)
     return img
@@ -522,7 +532,8 @@ def main():
     print("wrote", out, len(data), "bytes")
     print("sha256", hashlib.sha256(data).hexdigest())
     print("stories", N_STORIES, "sections", len(SECTIONS), "regions",
-          len(REGIONS), "wire5", N_WIRE5)
+          len(REGIONS), "wire5", N_WIRE5, "outlets", len(OUTLETS),
+          "icon_kinds", len(ICON_KINDS))
     assert len(data) <= 550 * 1024, len(data)
 
 

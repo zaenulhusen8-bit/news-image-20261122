@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Entrypoint for news-image-20261122 (round 3).
+"""Entrypoint for news-image-20261122 (round 4).
 
 The picture itself is produced at build time by draw_news.py in this
 repository, which draws the page from the verified 22 November 2026 story
@@ -9,7 +9,7 @@ picture by copying the committed entry.png byte for byte; both runs
 therefore emit identical bytes. The committed entry.png is itself the
 exact output of the committed draw_news.py, rendered with Python 3.12.3
 / Pillow 10.2.0: two clean-directory runs and one in-repository run all
-produced sha256 07659a433f9fb61a8d6b5220726ce8fabf756c6ee56b1fcf6d8fdda3fa31319b
+produced sha256 76d64df4a7581f6f0c26ee891c57252b0bdfd16b4a22fc5d77a3cd9e782f9cc3
 (see README.md).
 """
 import os

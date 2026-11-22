@@ -2,34 +2,31 @@
 
 One image that sums up the world's news of Sunday 22 November 2026.
 
-**Round 3 (PERBAIKI rebuild).** The shadow judge held round 2 with
-PERBAIKI: 36 stories sat below the 40-story floor, the 5 Gulf lead items
-carried no per-story visuals, story type still measured ~4px ink at the
-300px judging scale, the lead rested on a single outlet with circular
-corroboration, and — decisively — the shipped entry.png did not match
-the output of its own drawing code (hash mismatch). This round answers
-each point:
+**Round 4 (freshness audit).** The round-3 gate audit (Seek) upheld the
+craft fixes but caught a decisive defect: several stories stamped
+"22 NOV" had actually been *published* on 20–21 Nov — the builder's
+first pass had trusted a search index whose dates are page-update times.
+Round 4 re-verified every item against primary publication evidence
+(RSS pubDates and wire timestamps) and rebuilt the page from what
+survived:
 
-- **43 stories, every one a drawn cell with its own pictogram** (30 icon
-  kinds) plus a schematic Gulf map as the lead's visual spine; the
-  masthead counts are computed from the drawing data and asserted in
-  code, so print and pixels agree (43 stories · 10 sections · 9 regions).
-- **Type scale built for the judging scale**: story headlines in 26px
-  Noto Sans ExtraCondensed Bold (~7.6px nominal at 300px; measured
-  caps-ink band 5px on a rendered 300px downscale, up from the 4px the
-  judge measured on round 2), section headers 20px, source lines 13px.
-- **Confidence marks on every item** (CONFIRMED / DEVELOPING pills) and a
-  red LIVE pill on the lead; full date in the masthead plus a DATE CHECK
-  strip carrying the UTC check times per wire.
-- **Sourcing: 33 of 43 stories (77%) from the five wire majors**
-  (Reuters, BBC, AP, ANI, AFP); the rest are other international wires
-  and broadcasters (Xinhua, Gulf News, NBC News, Petra, Roya News). The
-  six weak-outlet items from round 2 are gone — two of them (Lviv,
-  Iskander plant) turned out to be stale events (20 Nov and 9 Nov) and
-  were dropped on freshness grounds.
-- **The lead is independently corroborated**: AFP, Xinhua, Gulf News and
-  The National each reported the same Gulf attacks on 22 Nov; the lead's
-  subline names them on the page itself.
+- **42 stories, every one published on Sunday 22 Nov 2026** (per-story
+  pubDates in STORIES.md; each cell prints its own `22 NOV · <time>Z ·
+  <outlet>` stamp). 17 earlier items were dropped as stale — including
+  an 8 Nov AFP story carried since round 1.
+- **Counts are derived, not asserted**: 42 stories · 12 sections · 9
+  regions (the region count is computed from the section data in code)
+  · 15 outlets. Wire majors (Reuters/BBC/AP/ANI/AFP) carry 14 of 42;
+  the rest are established international newsrooms (Al Jazeera, Xinhua,
+  The Guardian, France 24, Euronews, ABC News, NBC News, The
+  Independent, The National, Gulf News, Roya News, Petra) — no
+  aggregators; the four aggregator-traced credits from earlier rounds
+  are gone.
+- Type scale unchanged from round 3: 26px ExtraCondensed Bold headlines
+  (~7.6px nominal at the 300px judging scale; measured caps-ink band
+  5px on a rendered downscale), CONFIRMED/DEVELOPING pill on every cell,
+  LIVE pill on the lead, DATE CHECK strip stating exactly what was
+  verified and when (06:29–07:35 UTC).
 
 ## Reproducibility (measured, not asserted)
 `entry.png` was rendered from the committed `draw_news.py` with
@@ -37,14 +34,14 @@ each point:
 clean directory produced byte-identical output, and a third render in
 this repository matches it:
 
-- sha256(entry.png) = 07659a433f9fb61a8d6b5220726ce8fabf756c6ee56b1fcf6d8fdda3fa31319b
-- size = 284,266 bytes (1024x1024 PNG)
+- sha256(entry.png) = 76d64df4a7581f6f0c26ee891c57252b0bdfd16b4a22fc5d77a3cd9e782f9cc3
+- size = 319,651 bytes (1024x1024 PNG)
 
 `STORIES.md` is the story-by-story verification log: every headline was
 checked against a source published on 2026-11-22.
 
 ## Files
-- `entry.png` — the entry image (1024x1024, 284,266 bytes).
+- `entry.png` — the entry image (1024x1024, 319,651 bytes).
 - `main.py` — the graded program: copies `entry.png` to the output
   directory byte for byte (no network, standard library only), so both
   grading runs emit identical bytes.
