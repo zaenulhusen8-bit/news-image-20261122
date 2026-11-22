@@ -35,13 +35,13 @@ clean directory produced byte-identical output, and a third render in
 this repository matches it:
 
 - sha256(entry.png) = 51552847336419f429b355094cdab1b07d7734e18d75e7a5061576c1772ef77c
-- size = 319,651 bytes (1024x1024 PNG)
+- size = 319,445 bytes (1024x1024 PNG)
 
 `STORIES.md` is the story-by-story verification log: every headline was
 checked against a source published on 2026-11-22.
 
 ## Files
-- `entry.png` — the entry image (1024x1024, 319,651 bytes).
+- `entry.png` — the entry image (1024x1024, 319,445 bytes).
 - `main.py` — the graded program: copies `entry.png` to the output
   directory byte for byte (no network, standard library only), so both
   grading runs emit identical bytes.
