@@ -72,7 +72,7 @@ SECTIONS = [
     ]),
     ("EUROPE", (70, 60, 150), "Europe", [
         ("BALTIC SHIP ABLAZE", "BBC", "DEVELOPING", "flame"),
-        ("PLOT TO KILL RAPPER", "BBC", "CONFIRMED", "target"),
+        ("PLOT TO KILL UA RAPPER", "BBC", "CONFIRMED", "target"),
         ("COP31 TALKS DEADLOCKED", "BBC", "DEVELOPING", "globe"),
         ("YOUTH PROTESTS SPREAD", "AFP", "CONFIRMED", "people"),
         ("BRUSSELS FLIGHTS OFF", "Xinhua", "CONFIRMED", "plane"),
@@ -99,7 +99,7 @@ SECTIONS = [
     ]),
     ("AFRICA", (150, 100, 20), "Africa", [
         ("ANC FIGHTS FOR KEY CITIES", "BBC", "CONFIRMED", "ballot"),
-        ("YOUTH VOTE UNSHAPED", "BBC", "CONFIRMED", "people"),
+        ("NIGERIA YOUTH UNSURE", "BBC", "CONFIRMED", "people"),
         ("SUDAN CLASHES, BLUE NILE", "Roya News", "DEVELOPING", "explosion"),
     ]),
     ("MARKETS & TECH", (90, 90, 96), "Global", [
@@ -475,9 +475,9 @@ def build():
     sy = ly + 104
     d.rounded_rectangle([10, sy, 64, sy + 17], 8, fill=RED)
     d.text((18, sy + 2), "● LIVE", font=F_SRC, fill=(255, 255, 255))
-    d.text((72, sy + 1), f"22 NOV · {LEAD[1]}", font=F_SRC,
+    d.text((72, sy + 1), "22 NOV · ANI + AFP · XINHUA · GULF NEWS · THE NATIONAL", font=F_SRC,
            fill=(40, 44, 50))
-    sw = d.textlength(f"22 NOV · {LEAD[1]}", font=F_SRC)
+    sw = d.textlength("22 NOV · ANI + AFP · XINHUA · GULF NEWS · THE NATIONAL", font=F_SRC)
     pill(d, 72 + sw + 8, sy + 1, LEAD[2])
     ICONS[LEAD[3]](d, 662, ly + 58, RED)
     draw_map(d, 692, ly, 322, 122)
